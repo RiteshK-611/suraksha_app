@@ -24,12 +24,13 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Registration" />
-        <activity android:name=".Login" />
         <activity android:name=".HowToSwipe" />
         <activity android:name=".TrigActivity" />
         <activity android:name=".helplineCall" />
         <activity android:name=".AddRelative" />
+        <activity android:name=".firstAid.FirstaidActivity" android:exported="true" />
+        <activity android:name=".selfDefence.SelfdefenceActivity" android:exported="true" />
+        <activity android:name=".lawsActs.LawsactsActivity" android:exported="true" />
         <activity android:name=".MainScreen" />
         <activity android:name=".MainActivity" android:exported="true">
             <intent-filter>

@@ -7,6 +7,9 @@ import android.content.Intent;
 import android.util.Log;
 import android.view.KeyEvent;
 import android.view.View;
+import com.mad.miniproject.firstAid.FirstaidActivity;
+import com.mad.miniproject.selfDefence.SelfdefenceActivity;
+import com.mad.miniproject.lawsActs.LawsactsActivity;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -36,27 +39,37 @@ public class MainActivity extends AppCompatActivity {
 //    }
 
     public void addRelative(View v){
-        Intent i = new Intent(getApplicationContext(), AddRelative.class);
+        Intent i = new Intent(MainActivity.this, AddRelative.class);
         startActivity(i);
     }
 
     public void helplineNumbers(View v){
-        Intent i = new Intent(getApplicationContext(), helplineCall.class);
+        Intent i = new Intent(MainActivity.this, helplineCall.class);
         startActivity(i);
     }
 
     public void triggers(View v){
-        Intent i = new Intent(getApplicationContext(), TrigActivity.class);
+        Intent i = new Intent(MainActivity.this, TrigActivity.class);
         startActivity(i);
     }
 
-    public void HowTo(View v){
-        Intent i = new Intent(getApplicationContext(), HowToSwipe.class);
+    public void firstAid(View v){
+        Intent i = new Intent(MainActivity.this, FirstaidActivity.class);
+        startActivity(i);
+    }
+
+    public void selfDefence(View v){
+        Intent i = new Intent(MainActivity.this, SelfdefenceActivity.class);
+        startActivity(i);
+    }
+
+    public void lawsActs(View v){
+        Intent i = new Intent(MainActivity.this, LawsactsActivity.class);
         startActivity(i);
     }
 
     public void LogOut(View v){
-        Intent i = new Intent(getApplicationContext(), Login.class);
+        Intent i = new Intent(MainActivity.this, Login.class);
         startActivity(i);
     }
 
