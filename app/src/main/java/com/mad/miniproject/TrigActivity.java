@@ -160,7 +160,8 @@ public class TrigActivity extends AppCompatActivity {
                 while(data.moveToNext())
                 {
                     String sms = "";
-                    sms += "\n\nHere is my location!\n"+"https://www.google.com/maps/@"+latitude+","+longitude+",15z";
+//                    sms += "\n\nHere is my location!\n"+"https://www.google.com/maps/@"+latitude+","+longitude+",15z";
+                    sms += "\n\nHere is my location!\n"+"https://www.google.com/maps/dir/?api=1&destination="+latitude+","+longitude; //gives direction & location
                     String num = data.getString(1);
                     smsManager.sendTextMessage(num, null, latitude+", "+longitude+" "+sms, null, null);
                 }
