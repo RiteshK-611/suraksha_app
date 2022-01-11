@@ -72,8 +72,6 @@ public class TrigActivity extends AppCompatActivity {
 
     }
 
-
-
     private SensorEventListener mSensorListener = new SensorEventListener() {
         @Override
         public void onSensorChanged(SensorEvent event) {
@@ -113,8 +111,6 @@ public class TrigActivity extends AppCompatActivity {
                                                         ,100);
                                             }
 
-
-
                                         }
                                     }
                                 }, null);
@@ -123,17 +119,12 @@ public class TrigActivity extends AppCompatActivity {
                         turnOnGPS();
                     }
 
-
                 } else {
                     requestPermissions(new String[]{Manifest.permission.ACCESS_FINE_LOCATION}, 1);
                 }
                 mSensorManager.unregisterListener(mSensorListener);
                 mSensorListener = null;
             }
-
-
-
-
         }
         @Override
         public void onAccuracyChanged(Sensor sensor, int accuracy) {
@@ -144,25 +135,19 @@ public class TrigActivity extends AppCompatActivity {
         super.onResume();
         mSensorManager.registerListener(mSensorListener, mSensorManager.getDefaultSensor(Sensor.TYPE_ACCELEROMETER),
                 SensorManager.SENSOR_DELAY_NORMAL);
-
-
-
-
     }
     @Override
     protected void onPause() {
         super.onPause();
         mSensorManager.unregisterListener(mSensorListener);
         mSensorListener = null;
-
-
     }
 
 
 
-    private void sendSMS(double sPhone, double smsText){
+    private void sendSMS(double latitude, double longitude){
 
-        if(sPhone!=0 && smsText!=0){
+        if(latitude!=0 && longitude!=0){
             myDB = new DatabaseHelper(this);
 
             //populate an ArrayList<String> from the database and then view it
@@ -174,8 +159,10 @@ public class TrigActivity extends AppCompatActivity {
                 SmsManager smsManager = SmsManager.getDefault();
                 while(data.moveToNext())
                 {
+                    String sms = "";
+                    sms += "\n\nHere is my location!\n"+"https://www.google.com/maps/@"+latitude+","+longitude+",15z";
                     String num = data.getString(1);
-                    smsManager.sendTextMessage(num, null, sPhone+" "+smsText+" ", null, null);
+                    smsManager.sendTextMessage(num, null, latitude+", "+longitude+" "+sms, null, null);
                 }
                 data.close();
 

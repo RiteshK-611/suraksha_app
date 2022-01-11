@@ -7,7 +7,7 @@
     android:orientation="vertical"
     tools:context=".MainActivity">
     <TextView
-        android:text="Shake the phone to detect to shake event"
+        android:text="This trigger sends your current location to the saved contacts.\n\nAnd call Police"
         android:textSize="24sp"
         android:textStyle="bold"
         android:layout_width="wrap_content"
