@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="70dp"
+        android:background="@drawable/searchitem"
+        android:orientation="vertical"
+        android:padding="5dp">
+
+        <TextView
+            android:id="@+id/editTextTextPersonName"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+
+            android:layout_marginStart="1dp"
+            android:layout_marginBottom="9dp"
+            android:ems="10"
+            android:inputType="textPersonName"
+            android:text="Bleeding"
+            android:textAlignment="center"
+            android:textSize="16sp"
+            />
+
+    </RelativeLayout>
+
+    <TextView
+        android:id="@+id/aid1"
+        android:layout_width="190pt"
+        android:layout_height="10000dp"
+        android:text="While it is important to stop bleeding, remember the ABCs of first aid and check
+        for something more serious first.
+        \n
+        \nThen:5,
+
+        \n\n1. Wash your hands or put on disposable gloves, if possible. This can help protect you from diseases like viral hepatitis and HIV/AIDS.6
+        Rinse the wound with water.
+        \n\n\n2. Cover the wound with a gauze or cloth (towel, blanket, clothing, whatever's available).
+        \n\n\n3. Apply direct pressure to stop the blood flow and encourage clotting, which is when blood naturally thickens to stop blood loss.
+        \n\n\n4. If possible, elevate the bleeding body part above the heart.
+        \n\n\n5. Don't remove the cloth if it becomes soaked through, but add more layers if needed. Removing the first layer will interfere with the clotting process and result in more blood loss.
+        \n\n\n6. Once bleeding has stopped, apply a clean bandage."
+        android:layout_alignParentBottom="true"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="70dp"
+        android:justificationMode="inter_word"
+
+        />
+
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="75pt"
+        android:layout_marginTop="700dp"
+        android:layout_marginEnd="75dp"
+
+        android:background="@drawable/home_icon"
+        android:orientation="vertical"
+        />
+
+</RelativeLayout>
