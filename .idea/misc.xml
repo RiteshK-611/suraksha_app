@@ -38,12 +38,15 @@
         <entry key="..\:/Users/Soham/Documents/College/BE/Lab AADL/raksha_app-main/app/src/main/res/layout/firstaidactivity.xml" value="0.2" />
         <entry key="..\:/Users/Soham/Documents/College/BE/Lab AADL/raksha_app-main/app/src/main/res/layout/firstaidinfo.xml" value="0.1" />
         <entry key="..\:/Users/Soham/Documents/College/BE/Lab AADL/raksha_app-main/app/src/main/res/layout/viewlistcontents_layout.xml" value="0.19583333333333333" />
+<<<<<<< HEAD
         <entry key="..\:/Users/Soham/Documents/College/BE/Lab AADL/suraksha_app-master/app/src/main/res/layout/activity_complaint.xml" value="0.1" />
         <entry key="..\:/Users/Soham/Documents/College/BE/Lab AADL/suraksha_app-master/app/src/main/res/layout/activity_firstaid.xml" value="0.25" />
         <entry key="..\:/Users/Soham/Documents/College/BE/Lab AADL/suraksha_app-master/app/src/main/res/layout/activity_helpline_call.xml" value="0.25" />
         <entry key="..\:/Users/Soham/Documents/College/BE/Lab AADL/suraksha_app-master/app/src/main/res/layout/activity_lawsacts.xml" value="0.25" />
         <entry key="..\:/Users/Soham/Documents/College/BE/Lab AADL/suraksha_app-master/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Soham/Documents/College/BE/Lab AADL/suraksha_app-master/app/src/main/res/layout/firstaidactivity.xml" value="0.12760416666666666" />
+=======
+>>>>>>> 0ea3ac1feac27ea7f24bd9ab4369b34ad6bd5a45
       </map>
     </option>
   </component>

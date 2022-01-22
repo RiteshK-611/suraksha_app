@@ -68,7 +68,7 @@ public class RegisterComplaint extends AppCompatActivity {
                         binding.complaint.getText().toString());
 
                 rootNode = FirebaseDatabase.getInstance("https://mad-mp-default-rtdb.firebaseio.com/");
-                reference = rootNode.getReference("test");
+                reference = rootNode.getReference("complaints");
 
                 reference.push().setValue(helperClass);
 

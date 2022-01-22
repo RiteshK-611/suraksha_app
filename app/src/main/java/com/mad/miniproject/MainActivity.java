@@ -70,9 +70,11 @@ public class MainActivity extends AppCompatActivity {
         startActivity(i);
     }
 
-    public void complaintRegistration(View v){
+
+    public void complaintRegistration(View v) {
         Intent i = new Intent(MainActivity.this, RegisterComplaint.class);
         startActivity(i);
+
     }
 
 
